@@ -1,9 +1,9 @@
 const LinksSocialMedia = {
   github: 'bernardofofg',
-  youtube: 'brksedu',
-  facebook: 'brsedku',
+  youtube: '#',
+  facebook: '#',
   instagram: 'bernardofofg',
-  twitter: 'brksedu'
+  twitter: '#'
 }
 
 function changeSocialMediaLinks() {
@@ -16,7 +16,7 @@ function changeSocialMediaLinks() {
 changeSocialMediaLinks()
 
 function getGitHubProfileInfos() {
-  const url = `https://api.github.com/${LinksSocialMedia.github}`
+  const url = `https://api.github.com/users/${LinksSocialMedia.github}`
 
   fetch(url)
     .then(response => response.json())
